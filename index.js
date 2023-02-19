@@ -133,6 +133,34 @@ function removeTasks() {
 }
 
 
+//ЗАДАНИЕ ПОД ***
+let num1;
+num1 = Number(num1);
+num1 = prompt("Введите число: ");
+
+function getLength() {
+    for (let i = 1; i < num1.length + 1; i++) {
+        console.log(i);
+    }
+}
+getLength();
+
+// function getLengthNumber() {
+//     for (let i = 0; i < num1.length; i++) {
+//         console.log(i.length);
+//     }
+// }
+// getLengthNumber();
+
+function getSumNumber() {
+    let sum = 0;
+    for (let i = 1; i < num1.length; i++) {
+        sum += num1[i];
+        console.log(sum);
+    }
+}
+getSumNumber();
+
 
 
 
