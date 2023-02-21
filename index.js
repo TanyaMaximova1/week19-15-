@@ -19,13 +19,16 @@ function creatTasks() {
     checkbox.className = "checkbox__check";
     document.body.append(checkbox);
 
-
     task = document.getElementById('task').value = "";
-
-    // if (document.getElementById('task').value == '') {
-    //     removeTasks();
-    // }
 }
+
+//не работает 
+if (document.getElementById('task').value == '') {
+    document.getElementById("noTasks__id").innerHTML = `Нет задач!`;
+} else if (document.getElementById('checkbox__check').value = true) {
+    document.getElementById("noTasks__id").innerHTML = ``;
+}
+
 
 //удаляет все задачи
 function removeTasks() {
